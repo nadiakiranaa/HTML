@@ -5,7 +5,7 @@
         body{
             background-color:rgb(255, 255, 255);
         }
-        .foto{
+        /* .foto{
             background-color:rgb(245, 162, 53);
             width: 90px;
             height: 60px;
@@ -14,18 +14,21 @@
             background-color:rgb(228, 151, 51) ;
             width: 90px;
             height: 60px;
+        } */
+        .kontainer{
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
         }
         .kanan {
-            display: flex;
             background-color:rgb(228, 151, 51) ;
-            padding: 90px;
-            width: 60px;
+            /* padding: 90px; */
+            width: 100vw;
         }
         .kiri {
-            display:gi flex;
             background-color: rgb(245, 162, 53);
-            padding: 90px;
-            width: 60px;
+            /* padding: 90px; */
+            width: 100vw;
         }
     </style>
 
@@ -34,12 +37,12 @@
 <body>
     <div class="kontainer">
         <div class="kanan"></div>
-             <div class="status"></div>
+        <div class="kiri"></div>
     </div>
 
-    <div class="kiri">
+    <!-- <div class="kiri">
         <div class="foto"></div>
-    </div>
+    </div> -->
 
 </body>
 </html>
