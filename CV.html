@@ -2,8 +2,23 @@
 
 <head>
     <style>
+       
         body{
-            background-color:rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(228, 151, 51);
+        }
+        .garis-vertikal{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20%; /* Letakkan di tengah secara horizontal */
+            width: 1px; /* Ketebalan garis */
+            background-color: black;
         }
         /* .foto{
             background-color:rgb(245, 162, 53);
@@ -16,19 +31,90 @@
             height: 60px;
         } */
         .kontainer{
+            position: relative;
             display: flex;
             flex-direction: row;
-            height: 100vh;
+            height: 100%;
+            width: 100%;
+        }
+
+        .image{
+            position: absolute;
+            top: 10;
+            left:10;
+            width: 50;
+            margin: 15;
+        }
+        .text{
+            margin-top: 5px;
+            text-align: center;
+            width: 50;
+            font-size: 12px;
         }
         .kanan {
-            background-color:rgb(228, 151, 51) ;
-            /* padding: 90px; */
-            width: 20vw;
+            background-color:rgb(228, 151, 51);
+            display: flex;
+            flex-direction: column;
+            padding: 50px; 
+            width: 50%;
+            justify-content: center;
+            align-items: center;
         }
         .kiri {
             background-color: rgb(245, 162, 53);
-            /* padding: 90px; */
-            width: 100vw;
+            display: flex;
+            padding: 50px;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+        .kotak{
+            width: 150px;/* Lebar kotak */
+            height: 30px;/* Tinggi kotak */
+            background-color: lightblue; /* Warna latar */
+            border: 2px solid black; /* Garis tepi */
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90%;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            text-transform: uppercase;
+        }
+        .Kotak Besar{
+            width: 500px;/* Lebar kotak */
+            height: 50px;/* Tinggi kotak */
+            background-color: lightblue; /* Warna latar */
+            border: 2px solid black; /* Garis tepi */
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100%;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            text-transform: uppercase;
+        }
+        .no-telp {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+        }
+        .pendidikan{
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px; 
+        }
+        .Keahlian Utama {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
         }
     </style>
 
@@ -36,16 +122,22 @@
 
 <body>
     <div class="kontainer">
-        <div class="kanan">
-            <div>
-                <img style="width: 40px;" src="image enchated.jpeg" alt="">
-                <p>judul</p>
-            </div>   
-        </div>
-        <div class="kiri">
+        <div class = "garis-vertikal"></div>
 
+        <div class="kanan">
+            <div class="image">
+            <div>
+                <img style="width: 135px;" src="image enchated.jpeg" alt="">  
+            </div>   
+            <div class="kotak">Informasi Kontak</div>
+            <p class="no-telp">+62-8121-7480-955</p>
+            <div class ="Kotak">PENDIDIKAN</div>
+            <div class ="Kotak">KEAHLIAN UTAMA</div>
+
+        <div class="kiri">
         </div>
-    </div>
+        </div>
+        <div class ="Kotak Besar">NADIA KIRANA AFIFAH </div>
 
     <!-- <div class="kiri">
         <div class="foto"></div>
